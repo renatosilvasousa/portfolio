@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      id="theme-favicon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <script>
+      /* Chave: portfolio-theme (ver src/constants/theme.ts) */
+      (function () {
+        var t = localStorage.getItem("portfolio-theme");
+        var theme;
+        if (t === "light" || t === "dark") {
+          theme = t;
+        } else {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+        var icon = document.getElementById("theme-favicon");
+        if (icon) {
+          // Use the href already set by Vite (which includes the correct base path),
+          // and derive the light variant from it to avoid hardcoding /portfolio/.
+          var darkHref = icon.href;
+          var lightHref = darkHref.replace("favicon.svg", "favicon-light.svg");
+          icon.href = theme === "dark" ? darkHref : lightHref;
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de estudante de Análise e Desenvolvimento de Sistemas — projetos, habilidades e contato."
+    />
+    <meta name="author" content="Renato Silva Sousa" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="Portfólio | Análise e Desenvolvimento de Sistemas"
+    />
+    <meta
+      property="og:description"
+      content="Portfólio de estudante de Análise e Desenvolvimento de Sistemas — projetos, habilidades e contato."
+    />
+    <meta property="og:image" content="/portfolio/og-image.png" />
+    <meta property="og:url" content="https://renatosilvasousa.github.io/portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfólio | Análise e Desenvolvimento de Sistemas"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfólio de estudante de Análise e Desenvolvimento de Sistemas — projetos, habilidades e contato."
+    />
+    <meta name="twitter:image" content="/portfolio/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfólio | Renato Silva Sousa</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Renato Silva Sousa",
+        "jobTitle": "Estudante de Análise e Desenvolvimento de Sistemas",
+        "description": "Portfólio de estudante de Análise e Desenvolvimento de Sistemas.",
+        "url": "https://renatosilvasousa.github.io/portfolio"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

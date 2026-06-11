@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <filter id="glow" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#5eb8ff" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="24" height="24" rx="7" fill="#0f1729" stroke="#5eb8ff" stroke-width="1.5" />
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="13.5" font-weight="800" letter-spacing="-0.08em">
+    <tspan fill="#5eb8ff" filter="url(#glow)">R</tspan>
+    <tspan fill="#f8fafc">s</tspan>
+  </text>
+</svg>
