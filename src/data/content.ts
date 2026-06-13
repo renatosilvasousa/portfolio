@@ -125,8 +125,8 @@ export const projects = {
       images: {
         dark: "/projects/portfolio-dark.png",
         light: "/projects/portfolio-light.png",
-        mobileDark: "/projects/portfolio-mobile-dark.png",
-        mobileLight: "/projects/portfolio-mobile-light.png",
+        mobileDark: "/projects/portfolio-mobile-dark.jpeg",
+        mobileLight: "/projects/portfolio-mobile-light.jpeg",
       },
       links: {
         repo: "https://github.com/renatosilvasousa/portfolio",
