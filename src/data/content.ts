@@ -51,7 +51,7 @@ export const hero = {
 export const about = {
   title: "Sobre",
   paragraphs: [
-    "Sou militar do Exército Brasileiro e estudante de Análise e Desenvolvimento de Sistemas, com foco em me tornar um Desenvolvedor Full Stack. ",
+    "Sou estudante de Análise e Desenvolvimento de Sistemas e militar do Exército Brasileiro, com foco em me tornar um Desenvolvedor Full Stack. ",
     "Também simpatizo com as áreas de Análise de Dados e Cibersegurança, pois acredito que os conhecimentos adquiridos nesses campos complementam o desenvolvimento de software e contribuem para a criação de soluções mais seguras, eficientes e orientadas a resultados.",
     "Busco aplicar o que aprendo em projetos acadêmicos, pessoais e profissionais, priorizando código legível, organização e evolução constante das minhas habilidades técnicas.",
   ],
@@ -65,7 +65,7 @@ export const about = {
 
 export const skills = {
   title: "Habilidades",
-  subtitle: "Tecnologias e competências em desenvolvimento.",
+  subtitle: "Tecnologias e competências que domino.",
   groups: [
     {
       name: "Front-end",
