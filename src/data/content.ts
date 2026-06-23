@@ -26,8 +26,8 @@ export const navLinks = [
 
 export const profile = {
   imageSrc: {
-    dark: "/profiles/profile-dark.png",
-    light: "/profiles/profile-light.png",
+    dark: "/profiles/profile-dark.webp",
+    light: "/profiles/profile-light.webp",
   },
   imageAlt: "Foto de perfil",
 } as const;
@@ -123,10 +123,10 @@ export const projects = {
         "Meu primeiro projeto completo com React, TypeScript e Tailwind CSS. Um portfólio responsivo com suporte a tema claro e escuro, animações suaves e foco em experiência do usuário e acessibilidade. Você está vendo ele agora mesmo!",
       tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
       images: {
-        dark: "/projects/portfolio-dark.png",
-        light: "/projects/portfolio-light.png",
-        mobileDark: "/projects/portfolio-mobile-dark.jpeg",
-        mobileLight: "/projects/portfolio-mobile-light.jpeg",
+        dark: "/projects/portfolio-dark.webp",
+        light: "/projects/portfolio-light.webp",
+        mobileDark: "/projects/portfolio-mobile-dark.webp",
+        mobileLight: "/projects/portfolio-mobile-light.webp",
       },
       links: {
         repo: "https://github.com/renatosilvasousa/portfolio",
